@@ -1,0 +1,153 @@
+:root {
+    --darkColor: hsl(0, 0%, 25%);
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    color: var(--darkColor);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: hsl(0, 0%, 0%);
+    font-family: 'Fraunces', serif;
+    line-height: .9;
+}
+
+h2 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: .35rem;
+}
+
+
+/* class selectors */
+
+.addCartButton{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    color: hsl(0, 100%, 100%);
+    display: block;
+    margin: 6% auto 3%;
+    padding: 10px;
+    width: 96%;
+}
+
+.cartImage {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
+    width: 15px;
+}
+
+/* .container {
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 10px;
+    position: relative;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    min-height: 375px;
+} */
+
+.container {
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 10px;
+    margin: 30vh auto auto;
+    width: 500px;
+    min-height: 375px;
+}
+
+.copy {
+    display: inline;
+    float: right;
+    height: 100%;
+    overflow: hidden;
+    padding: 3%;
+    width: 44%;
+}
+
+.discountedPrice {
+    color: hsl(158, 36%, 37%);
+    display: inline;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.mobileProductImage {
+    display: none;
+}
+
+.originalPrice {
+    bottom: 5px;
+    display: inline;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    position: relative;
+    text-decoration: line-through;
+}
+
+.productCopy {
+    font-size: 0.8rem;
+    line-height: 1.7;
+    margin-bottom: 5px;
+}
+
+.productImage {
+    border-radius: 10px 0 0 10px;
+    float: left;
+    width: 50%;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width:600px) {
+
+    .addCartButton {
+        font-size: 1rem;
+    }
+
+    .cartImage {
+        width: 18px;
+    }
+
+    .container {
+        width: 90vw;
+        height: auto;
+        margin-top: 8vh;
+    }
+
+    .copy {
+        clear: both;
+        display: block;
+        float: none;
+        font-size: 1.5rem;
+        height: auto;
+        width: auto;
+    }
+
+    .discountedPrice {
+        font-size: 2.2rem;
+    }
+
+    .productCopy {
+        font-size: 1.1rem;
+    }
+
+    .productImage {
+        display: none;
+    }
+
+    .mobileProductImage {
+        border-radius: 10px 10px 0 0;
+        display: block;
+        width: 100%;
+    }
+}
